@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+	float: left;
+	background-color: #734546;
+	width: 100%;
+	display: inline-block;
+	height: 150px;
+	margin-left: -8px;
+	padding-right: 20px;
+}
+
+#logo {
+	float: left;
+}
+
+h1 {
+	float: left;
+}
+
+nav {
+	float:right;
+	height: 100%;
+	margin-right: 2%;
+}
+
+
+.page, button {
+	padding: 30px;
+	padding-top: 22%;
+	font-size: 30px;
+	background: none;
+	border: none;
+	text-decoration: none;
+	z-index: 300;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	float:right;
+	right: 3%;
+	padding: 10px;
+	margin-top: -10px;
+	background-color: #734546;
+	z-index: 2;
+	width:8%;
+	text-align:center;
+	transition-delay: 3s;
+}
+
+.dropLink {
+	float:none;
+	display:block;
+	font-size: 20px;
+	margin-bottom: 30px;
+	
+}
+
+#dropdown:hover~.dropdown-content {
+	display:block;
+	transition-delay: 3s;
+ 
+}
+
+.dropdown-content:hover {
+	display:block;
+	transition-delay: 3s;
+
+}
+
+footer {
+	text-align: center;
+	background-color: #989898;
+	padding:30px;
+	
+}
+#buttons {
+	display:flex;
+	width:100%;
+	justify-content: center;
+}
+
+.button {
+	border: medium solid #BE2629;
+	display: block;
+	float:left;
+	padding:10px;
+	margin-left:2%;
+	margin-right:2%;
+}
