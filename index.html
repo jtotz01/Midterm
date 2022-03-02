@@ -4,13 +4,17 @@
 <meta charset="utf-8">
 	<link rel="stylesheet" href="styles.css">
 <title>Jumbo Italiano</title>
+	<style>
+		body {
+			background-color:;
+		}
 	
+	</style>
 </head>
 
 <body>
 <header>
-	<a id="logo" href="index.html">LOGO</a>
-	<h1><a href="index.html">Jumbo Italiano</a></h1>
+	<img src="logo.png" id="logo" href="index.html"/>
 	<nav>
 	<a class="page" href="index.html">Home</a>
 	<a class="page" href="menu.html">Menu</a>
@@ -23,6 +27,13 @@
   		<a class="dropLink" href="reviews.html">Reviews</a>
 	</div>
 	</nav> 
+	<script>
+		document.querySelector('#dropdown').addEventListener('click', () => 
+			{
+				document.querySelector('#dropdown-content').classList.add('activate');
+			})
+	
+	</script>
 </header>
 	<div id="title">Welcome to Tuft's Newest and Most Delicious Italian Resturaunt!</div>
 	<a>Image Here</a>
