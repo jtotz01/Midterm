@@ -1,7 +1,7 @@
 //DONT FORGET TO LINK STYLES.CSS
 
 <header>
-	<img src="logo.png" id="logo" href="index.html"/>
+	<a href="index.html"><img src="logo.png" id="logo"/></a>
 	<nav>
 	<a class="page" href="index.html">Home</a>
 	<a class="page" href="menu.html">Menu</a>
