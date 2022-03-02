@@ -4,10 +4,10 @@
 	<a href="index.html"><img src="logo.png" id="logo"/></a>
 	<nav>
 	<a class="page" href="index.html">Home</a>
-	<a class="page" href="menu.html">Menu</a>
+	<a class="page" href="Menu.html">Menu</a>
 	<button id="dropdown">More</button>
 	<div class="dropdown-content">
-  		<a class="dropLink" href="about.html">About Us</a>
+  		<a class="dropLink" href="AboutUs.html">About Us</a>
   		<a class="dropLink" href="order.html">Order Online</a>
   		<a class="dropLink" href="contact.html">Contact Us</a>
 		<a class="dropLink" href="events.html">Events</a>
