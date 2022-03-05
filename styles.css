@@ -97,7 +97,8 @@ footer {
 	display:flex;
 	width:100%;
 	justify-content: center;
-	test-align:center;
+	text-align:center;
+	font-weight: 1200;
 }
 
 .button {
