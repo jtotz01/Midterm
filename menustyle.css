@@ -4,17 +4,6 @@
     box-sizing:border-box
 }
 
-.navbar {
-  display: flex;
-  width: 100%;
-  box-shadow: 0 0 5px black;
-  text-align: center;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-}
-
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -22,33 +11,73 @@ body{
   width:1200px;
   margin:100px auto;
 }
-.title{
+.wrapper2{
+  width:1200px;
+  margin:100px auto;
+}
+
+/* food menu title */
+.Menutitle{
   text-align:center;
   margin-bottom:60px;
+  
 }
-.title h4{
+.Menutitle h4{
+  text-transform:capitalize;
+  font-size:36px;
+  position:relative;
+  display:inline-block;
+  padding-bottom:10px;
+  margin-top: 60px;
+}
+.Menutitle h4 span{
+  display:block;
+  font-size:18px;
+  font-style:italic;
+  margin-bottom:3px;
+}
+.Menutitle h4:before{
+  position:absolute;
+  content:"";
+  width:100px;
+  height:2px;
+  background-color:#35b1ff;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+/* drink menu title */
+.DrinkMenutitle{
+  text-align:center;
+  margin-bottom:60px;
+  
+}
+.DrinkMenutitle h4{
   text-transform:capitalize;
   font-size:36px;
   position:relative;
   display:inline-block;
   padding-bottom:10px;
 }
-.title h4 span{
+.DrinkMenutitle h4 span{
   display:block;
   font-size:18px;
   font-style:italic;
-  margin-bottom:10px;
+  margin-bottom:3px;
 }
-.title h4:before{
+.DrinkMenutitle h4:before{
   position:absolute;
   content:"";
   width:100px;
   height:2px;
-  background-color:#ff7720;
+  background-color:#35b1ff;
   bottom:0;
   left:50%;
   transform:translateX(-50%);
 }
+
+
 .menu{
   display:flex;
   flex-wrap:wrap;
@@ -85,7 +114,28 @@ body{
   padding-bottom:5px;
 }
 .single-menu h4 span{
-  float:right;
+  float: right;
   color:#add8e6;
   font-style:italic;
+}
+
+@media (max-width: 1150px) {
+    .menu {
+      display: block;
+      flex-wrap:wrap;
+      justify-content:space-between;
+    }
+    .menu-content {
+        width:500px;
+    }
+}
+@media (max-width: 730px) {
+    .menu {
+      display: block;
+      flex-wrap:wrap;
+      justify-content:space-between;
+    }
+    .menu-content {
+        width:250px;
+    }
 }
