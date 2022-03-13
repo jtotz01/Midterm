@@ -128,9 +128,8 @@ footer {
 		right: 6%;
 		width: 150px;
 	}
-	#coverText p {
-	 font-size: 10px;
-	 font-size: 10px;
+	#coverText p{
+	 font-size: 100px;
 		}
 }
 
@@ -139,7 +138,7 @@ footer {
 		width:30%;
 		margin-left: 2%;
 	}
-	.page, button {
+	.page, .button {
 		padding: 10px;
 		padding-top: 30%;
 }
