@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html>
  <head>
+     
      <meta name = "keywords" content = " order, order form, 
      order online, online order">
   <title> 
       Order Form
   </title>
 <style>
+header {
+	float: left;
+	background-color: #3e8ede;
+	width: 100%;
+	display: inline-block;
+	height: 150px;
+	margin-left: -8px;
+	padding-right: 20px;
+	box-shadow: 0 1px 5px gray;
+	z-index: 100;
+	margin-top:-10px;
+}
+
+#logo {
+	float: left;
+	margin-left: 10%;
+	margin-top: -1%;
+	border-radius: 200px;
+	z-index: 100;
+	margin-bottom: -10px;
+}
+nav {
+	float:right;
+	height: 100%;
+	margin-right: 7%;
+}
+
+
+.page, button {
+	padding: 30px;
+	padding-top: 22%;
+	font-size: 30px;
+	background: none;
+	border: none;
+	text-decoration: none;
+	z-index: 300;
+	color:white;
+	text-decoration: none;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	float:right;
+	right: 6%;
+	padding: 10px;
+	margin-top: -10px;
+	background-color: #3e8ede;
+	z-index: 2;
+	width:8%;
+	text-align:center;
+	transition-delay: 3s;
+	box-shadow: 0 20px 10px gray;
+}
+
+.dropLink {
+	float:none;
+	display:block;
+	font-size: 20px;
+	margin-bottom: 30px;
+	color:white;
+	text-decoration: none;
+	
+}
+
+#dropdown:hover~.dropdown-content {
+	display:block;
+}
+
+.activate {
+	display:block;
+}
+
+.dropdown-content:hover {
+	display:block;
+	transition-delay: 3s;
+
+}
+
+footer {
+	text-align: center;
+	background-color: #3e8ede;
+	padding:30px;
+	color: white;
+	font-size: 20px;
+	
+}
+#buttons {
+	display:flex;
+	width:100%;
+	justify-content: center;
+	text-align:center;
+	font-weight: 1200;
+	text-decoration: none;
+	color:black;
+	
+}
+
+.button {
+	border: 4px solid #3e8ede;
+	display: block;
+	float:left;
+	padding:15px;
+	margin-left:2%;
+	margin-right:2%;
+	border-radius: 200px;
+}
+#coverText {
+			text-align: center;
+			position: absolute;
+			top: 22%;
+			left: 3%;
+		}
+#coverText p {
+			font-size: 80px;
+			font-family: 'Dancing Script', cursive;
+			color:#3e8ede;
+			font-weight: 800;
+}
+
+@media (max-width: 1509px){
+	.dropdown-content {
+		right: 6%;
+		width: 150px;
+	}
+	#coverText p{
+	 font-size: 100px;
+		}
+}
+
+@media (max-width: 747px){
+	#logo {
+		width:30%;
+		margin-left: 2%;
+	}
+	.page, .button {
+		padding: 10px;
+		padding-top: 30%;
+}
+	#coverText {
+			top: 35%;
+		}
+	#coverText p {
+		font-size: 40px;
+	}
+	#buttons {
+		font-size: 20px;
+	}
+
+}
+
+@media (max-width: 510px){
+	.page, button {
+		padding: 0px;
+		padding-top: 26%;
+		font-size: 20px;
+}
+	#buttons {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 1099px){
+	#coverText {
+			top: 9%;
+		}
+}
     th{
         text-align:center;
       }
@@ -30,6 +198,8 @@
 
   .order {
     text-align: center;
+    height: 100%;
+    width: 100%
 }
 #alignment{
     margin-left: auto;
