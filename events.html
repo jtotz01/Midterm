@@ -2,49 +2,127 @@
 
 <head>
 
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
+
     <title>Events - Jumbo Italia</title>
 
+    <style type="text/css">
+
+        h1 {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 45px;
+        }
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        .schedule {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            vertical-align: middle;
+        }
+
+
+    </style>
 
 </head>
 
 
 <body>
 
-    <h1>Events</h1>
+    <header>
+        <a href="index.html"><img src="jumbo italia logo.png" id="logo"/></a>
+        <nav>
+        <a class="page" href="index.html">Home</a>
+        <a class="page" href="Menu.html">Menu</a>
+        <button id="dropdown">More</button>
+        <div class="dropdown-content">
+              <a class="dropLink" href="AboutUs.html">About Us</a>
+              <a class="dropLink" href="order.html">Order Online</a>
+              <a class="dropLink" href="contact.html">Contact Us</a>
+            <a class="dropLink" href="events.html">Events</a>
+              <a class="dropLink" href="reviews.html">Reviews</a>
+        </div>
+        </nav> 
+        <script>
+            document.querySelector('#dropdown').addEventListener('click', () => 
+                {
+                    document.querySelector('#dropdown-content').classList.add('activate');
+                })
+        
+        </script>
+    </header>
+
+    <h1 class="heading">Events</h1></br></br></br></br>
+    
+    <table>
+        <tr>
+            <td><h2 class="heading">Student Events</h2>
+                Student music groups from Tufts are often featured on Sundays. These consist of groups 
+                such as Tufts Symphony Orchestra and Wind Ensemble, as well as select jazz and vocals groups.
+            </td>
+            <td class="center"><img src="studentevent.jpg"/></td>
+        </tr>
+
+        <tr>
+            <td class="center"><img src="liveperformance.jpg"/></td>
+            <td><h2 class="heading">Live Performances</h2>
+                <p>Every Friday, we feature live performances from Tufts student-run music groups as well as artists and bands 
+                from the local boston area.</p>
+                Featured this Friday: Medford Symphony Orchestra.
+                The Medford Symphony Orchestra is an orchestra based in Medford and specialize in classical music by 
+                artists such as Beethoven, Debussy, and Mahler. They have had several previous performances at venues such 
+                as Carnegie Hall in New york and Symphony Hall in Boston.
+                </br>
+                <p> Schedule for the next month: </p>
+                <table class="schedule"> 
+                    <tr>
+                        <th class="schedule"> Date </th>
+                        <th class="schedule"> Performance </th>
+                    </tr>
+                    <tr>
+                        <td class="schedule"> &nbsp March 18 &nbsp </td>
+                        <td class="schedule"> &nbsp Medford Symphony Orchestra &nbsp</td>
+                    </tr>
+                    <tr>
+                        <td class="schedule"> &nbsp March 25 &nbsp</td>
+                        <td class="schedule"> &nbsp Tufts Jazz Ensemble &nbsp</td>
+                    </tr>
+                    <tr>
+                        <td class="schedule"> &nbsp April 1 &nbsp</td>
+                        <td class="schedule"> &nbsp Tufts Symphony Orchestra &nbsp</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h2 class="heading">Private Events</h2>
+                <p>Private events, such as parties, receptions, etc., can be held upon request and should be scheduled 
+                at least a week before the event date.</p>
+                <h3 class="heading">Host your private event:</h3>
+                To host your own private event, 
+                <a class="hplink", href="contact.html">contact us</a>
+                and include your name, jumbo id, and the event you would like to hold.
+            </td>
+            <td class="center"><img src="privateevent.jpg"/></br></br></td>
+        </tr>
+ 
 
 
-    <h2>Student Events</h2>
-    Student music groups from Tufts are often featured on Sundays. These consist of groups 
-    such as Tufts Symphony Orchestra and Wind Ensemble, as well as select jazz and vocals groups.
+    </table>
 
-
-    <h2>Live Performances</h2>
-    Every Friday, we feature live performances from Tufts student-run music groups as well as artists and bands 
-    from the local boston area.
-
-    Featured this Friday: Medford Symphony Orchestra.
-    The Medford Symphony Orchestra is an orchestra based in Medford and specialize in classical music by 
-    artists such as Beethoven, Debussy, and Mahler. They have had several previous performances at venues such 
-    as Carnegie Hall in New york and Symphony Hall in Boston.
-
-    Schedule for the next month:
-    4,11,18 *can add if want (just have to come up with 2-3 more names)
-
-
-    <h2>Private Events</h2>
-    Private events, such as parties, receptions, etc., can be held upon request and should be scheduled 
-    at least a week before the event date.
-
-
-    <h3>Host your private event:</h3>
-    To host your own private event, contact us (hyperlink to contact us page) and include your 
-    name, jumbo id, and the event you would like to hold.
-
-
+    <footer>Opening Hours: Mon - Fri: 11am -10pm  Sat - Sun: 1pm - 12pm</footer>
 
 </body>
-
-
 
 
 
