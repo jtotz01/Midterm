@@ -36,9 +36,28 @@
 		}
 	
 	#coverText {
-			top:15%;
-			border-radius: 20px;
+		top:100px;
+		width: 20%;
+		border-radius: 20px;
+		margin-left: 5%;
+		padding: 80px;
+		font-size: 100px;
+		background-color: rgba(0,0,0,0.47);
+		text-align: center;
+		vertical-align: middle;
 }
+	@media (max-width:1500px){
+		#coverText {
+			font-size: 60px;
+		}
+	}
+	@media (max-width:750px){
+		#coverText {
+			font-size: 40px;
+			padding: 20px;
+			top:150px;
+		}
+	}
 	.review {
 		font-size: 20px;
 		font-weight: 100;
@@ -86,7 +105,7 @@
 	</script>
 </header>
 <div id="cover">
-	<p id="coverText" style="color:white; font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif'; background:rgba(0,0,0,0.56)">Hear what people are saying about Tufts newest dining option!</p>
+	<p id="coverText" style="color:white; font-family: Constantia, 'Lucida Bright', 'DejaVu Serif', Georgia, 'serif';">Reviews!</p>
 
 	<img id="title_image" src="reviewImg.jpg" alt="Italian Resturaunt">
 </div>

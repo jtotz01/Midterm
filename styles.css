@@ -128,8 +128,9 @@ footer {
 		right: 6%;
 		width: 150px;
 	}
-	#coverText {
-			top: 15%;
+	#coverText p {
+	 font-size: 10px;
+	 font-size: 10px;
 		}
 }
 
@@ -143,7 +144,7 @@ footer {
 		padding-top: 30%;
 }
 	#coverText {
-			top: 30%;
+			top: 35%;
 		}
 	#coverText p {
 		font-size: 40px;
