@@ -1,7 +1,7 @@
 //DONT FORGET TO LINK STYLES.CSS
 
 <header>
-	<a href="index.html"><img src="logo.png" id="logo"/></a>
+	<a href="index.html"><img src="logo.png" alt="logo" id="logo"/></a>
 	<nav>
 	<a class="page" href="index.html">Home</a>
 	<a class="page" href="Menu.html">Menu</a>
@@ -14,7 +14,7 @@
   		<a class="dropLink" href="reviews.html">Reviews</a>
 	</div>
 	</nav> 
-	<script>
+	<script language="javascript">
 		document.querySelector('#dropdown').addEventListener('click', () => 
 			{
 				document.querySelector('#dropdown-content').classList.add('activate');
