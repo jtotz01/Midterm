@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <link rel="stylesheet" href="styles.css">
+     <meta name = "keywords" content = "contact, contact form, form, message, 
+     questions, leave a review, leave a message">
+  <title> 
+  </title>
+<style>
+    .contact{
+        list-style-type: none;
+        background: #333;
+        color:Antiquewhite;
+        width:33%;
+        }
+        body{
+            font-family: "Baskerville Old Face";
+            background-color: #f2f2f2
+        }
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color:black;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .form {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+</style>
+<header>
+	<a href="index.html"><img src="logo.png" alt="logo" id="logo"/></a>
+	<nav>
+	<a class="page" href="index.html">Home</a>
+	<a class="page" href="Menu.html">Menu</a>
+	<button id="dropdown">More</button>
+	<div class="dropdown-content">
+  		<a class="dropLink" href="AboutUs.html">About Us</a>
+  		<a class="dropLink" href="order.html">Order Online</a>
+  		<a class="dropLink" href="contact.html">Contact Us</a>
+		<a class="dropLink" href="events.html">Events</a>
+  		<a class="dropLink" href="reviews.html">Reviews</a>
+	</div>
+	</nav> 
+	<script language="javascript">
+		document.querySelector('#dropdown').addEventListener('click', () => 
+			{
+				document.querySelector('#dropdown-content').classList.add('activate');
+			})
+	
+	</script>
+</header>
+</head>
+<body>
+    <div class = intro>
+    <h1>CONTACT US TODAY</h1>
+    <p>Feel free leave us any questions you have about Jumbo Italia or any 
+        reviews you want to leave for us. You can also
+    send us an email at jumboitalia@tufts.edu, or call us at 
+    123-456-7890.</p>
+    </div>
+        <div class = form>
+            <label for = "fname">First Name</label>
+            <input type = "text" id = "fname" name = "firstname">
+            
+            <label for = "lname">Last Name</label>
+            <input type = "text" id = "lname" name = "lastname">
+            
+            <label for = "email">Email Address</label>
+            <input type = "text" id = "email" name = "emailAd">
+            
+            <label for = "phone">Phone Number</label>
+            <input type = "text" id = "phone" name = "phoneNu">
+            
+            <label for="subject">Subject</label>
+            <textarea id = "subject" name="subject"></textarea> 
+            
+            <label for="message">Message</label>
+            <textarea id = "message" name="message"
+            style="height:200px"></textarea> 
+            
+            <a href = "thankyouCONTACT.html" class = "active">
+               <button type = "button" style = "margin-bottom:20px;">
+               SUBMIT
+               </button></a>
+</body>
+</html>
