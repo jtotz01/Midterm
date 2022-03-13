@@ -3,71 +3,92 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="AboutUsStyle.css">
-  <title>About us page html</title>
+    <link rel="stylesheet" type="text/css" href="AboutUsStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>About Us</title>
 </head>
 
 <body>
-  <!-- nav bar here -->
-  <div class="navbar">
-    Nav-Bar
+  <!-- place your nav bar here -->
+  <header>
+ <a href="index.html"><img src="logo.png" alt="logo" id="logo"/></a>
+ <nav>
+ <a class="page" href="index.html">Home</a>
+ <a class="page" href="Menu.html">Menu</a>
+ <button id="dropdown">More</button>
+ <div class="dropdown-content">
+     <a class="dropLink" href="AboutUs.html">About Us</a>
+     <a class="dropLink" href="order.html">Order Online</a>
+     <a class="dropLink" href="contact.html">Contact Us</a>
+     <a class="dropLink" href="events.html">Events</a>
+     <a class="dropLink" href="reviews.html">Reviews</a>
+ </div>
+ </nav> 
+ <script>
+     document.querySelector('#dropdown').addEventListener('click', () => 
+         {
+             document.querySelector('#dropdown-content').classList.add('activate');
+         })
+ 
+ </script>
+</header>
+  
+  <div id="cover">
+  <img src="team.jpg" alt="team" id="title_image">
+  <div id="coverText"><p>Our Team</p></div>
   </div>
+  
 
-  <div class="container">
+ <div class="container">
 
-    <div class="wrapper">
-      <div class="hr">
-        <hr>
-        <h2>Our Mission</h2>
-        <hr>
-      </div>
 
-      <p class="mission-txt">"To Provide Tufts Students with Authentic Italian Food"</p>
-
-    </div>
 
     <div class="wrapper">
-      <h2>About</h2>
-      <div>
-        <img src= alt="img">
-        <p> A restaurant is a place designed to provide dining spaces and social environments for people to enjoy.  Students at Tufts are seeking sit-down restaurant
-            experience that they currently can't get on campus.  A restaurant where Italian food is served and memories are made, Jumbo Italia brings a taste of Italy to Cummings Center.
-        </p>
+     
+        <div class="AboutTitle">
+            <h4>About Us</h4>
+        </div>
+     
 
-      </div>
-    </div>
-
-    <div class="wrapper">
-      <h2>Owners</h2>
-      <div class="faculties">
+      <div class="Owners">
         <div class="unit">
-          <img src= alt="">
-          <p>Willie Xu, Director</p>
-          <p>Born in Italy, Willie's life mission was to share his family's secret recipes with the Tufts community.</p>
+          <img src="willie.jpg" alt="">
+          <p>Willie, Director</p>
+          <p>Willie joins Jumbo Italia from his previous role as Chief Restauranteur of
+          France.  He brings with him a breadth of experience in the restaurant industry.
+      Willie hopes to make Jumbo Italia Tufts' premier dining location. </p>
 
         </div>
         <div class="unit">
-          <img src= alt="">
-          <p>Sam Reed, Head Chef</p>
-          <p>With over 30 years of experience, Sam joins the restaurant after a successful career across Europe.</p>
+          <img src="sam.jpg" alt="">
+          <p>Sam, Head Chef</p>
+          <p>Sam brings his 30+ years of culinary experience from various restaurants across the US to Jumbo Italia.
+          A highly decorated chef, he boasts 5-star ratings from every top critic agency.  Sam's mission is to
+          give back to his alma mater.</p>
 
         </div>
         <div class="unit">
-          <img src= alt="">
-          <p>Andrew Nuzzolo, Executive Manager</p>
-          <p>Andrew joins us after a successful stint as manager of multiple million dollar restuarants.</p>
+          <img src="andrew.jpg" alt="">
+          <p>Andrew, Manager</p>
+          <p>Andrew was formerly manager of Ramsey Kitchen.  After having creative differences
+          with Gordon Ramsey, Andrew left and founded Jumbo Italia.  He is excited to manifest his vision for
+      an Italian restaurant at Tufts.</p>
         </div>
+        
         <div class="unit">
-          <img src= alt="">
-          <p>Jacob Totz, Head of Operations</p>
-          <p>Jacob is glad to join the team after graduating Tufts this past year. </p>
-
+          <img src="Jacob-Totz.jpg" alt="">
+          <p>Jacob, Chief of Strategy</br></p>
+          <p>Jacob oversees day-to-day operations.  He also 
+      leads the expansion team that is breaking ground at SMFA, Tufts Dental School, and Tufts Med School in 2023.
+  Jacob is passionate about strategizing restaurant efforts and is excited about joining the Jumbo Italia team. </p>
         </div>
       </div>
     </div>
 
-  </div>
+  </div> 
+  
+  <footer>Opening Hours: Mon - Fri: 11am -10pm  Sat - Sun: 1pm - 12pm</footer>
+  
 </body>
 
 </html>
