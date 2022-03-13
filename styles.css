@@ -99,6 +99,9 @@ footer {
 	justify-content: center;
 	text-align:center;
 	font-weight: 1200;
+	text-decoration: none;
+	color:black;
+	
 }
 
 .button {
