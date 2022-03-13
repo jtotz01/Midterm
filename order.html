@@ -437,10 +437,14 @@ footer {
             alert("Your order must be more than $0.00. Please make different selections.");
             return false;
         }
-        else 
+        else if(numOrders[0] > 0 || numOrders[1] > 0 || numOrders[2] > 0 || numOrders[3] > 0) 
         {
-            return true;
+		alert("No negative quantities please. Please make different selections."
+            return false;
         }
+	    else
+	    {
+		    return true;
     }
     //Asks what method of payment the user wants to use
     function askPayType()
