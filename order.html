@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <link rel="stylesheet" href="styles.css">
+     <meta name = "keywords" content = " order, order form, 
+     order online, online order">
+  <title> 
+      Order Form
+  </title>
+<style>
+    th{
+        text-align:center;
+      }
+
+    body{
+        font-size: 15pt;
+        background-image: url("white.blue.texture.jpg");
+        font-family: "Baskerville old face";
+        }
+
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  div {
+    text-align: center;
+    border-style: solid;
+    height: 850px;
+    width:100%
+}
+#alignment{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+</style>
+<header>
+	<a href="index.html"><img src="logo.png" alt="logo" id="logo"/></a>
+	<nav>
+	<a class="page" href="index.html">Home</a>
+	<a class="page" href="Menu.html">Menu</a>
+	<button id="dropdown">More</button>
+	<div class="dropdown-content">
+  		<a class="dropLink" href="AboutUs.html">About Us</a>
+  		<a class="dropLink" href="order.html">Order Online</a>
+  		<a class="dropLink" href="contact.html">Contact Us</a>
+		<a class="dropLink" href="events.html">Events</a>
+  		<a class="dropLink" href="reviews.html">Reviews</a>
+	</div>
+	</nav> 
+	<script language="javascript">
+		document.querySelector('#dropdown').addEventListener('click', () => 
+			{
+				document.querySelector('#dropdown-content').classList.add('activate');
+			})
+	
+	</script>
+</header>
+</head>
+<body>
+      <title>Order Form</title>
+      <div>
+          <h1>Welcome to Jumbo Italia Online!</h1>
+          <h2>===========Prices for Entrees===========</h2>
+          <table width = "40%" id = "alignment">
+              <tr>
+            <th>Food Item</th>
+            <th>Price</th>
+              </tr>
+              <tr>
+<th style="font-weight: normal;">Pizza Margarita</th> 
+<th style="font-weight: normal;" >$18</th> 
+</tr> 
+<tr>
+<th style="font-weight: normal;">Caesar Salad</th> 
+<th style="font-weight: normal;">$10</th> 
+</tr>
+<tr> 
+<th style="font-weight: normal;">Jumbo Pasta</th> 
+<th style="font-weight: normal;">$18</th> 
+</tr> 
+<tr>  
+<th style="font-weight: normal;">Pizza Talegio</th> 
+<th style="font-weight: normal;">$18</th>  
+</tr>  
+<tr>
+<th style="font-weight: normal;">Arugula Salad</th> 
+<th style="font-weight: normal;">$8</th> 
+</tr>
+<tr>
+<th style="font-weight: normal;">Pan Seared Salmon</th> 
+<th style="font-weight: normal;">$25</th> 
+</tr>
+</table>
+
+<h2>===========Prices for Drinks===========</h2>
+<table width = "40%" id = "alignment">
+    <tr>
+  <th>Drink Item</th>
+  <th>Price</th>
+    </tr>
+    <tr>
+<th style="font-weight: normal;">Water</th> 
+<th style="font-weight: normal;" >$1.50</th> 
+</tr> 
+<tr>
+<th style="font-weight: normal;">Coca-Cola</th> 
+<th style="font-weight: normal;">$2.50</th> 
+</tr>
+<tr> 
+<th style="font-weight: normal;">Sparkling Water</th> 
+<th style="font-weight: normal;">$1.50</th> 
+</tr> 
+<tr>  
+<th style="font-weight: normal;">Lemonade</th> 
+<th style="font-weight: normal;">$2.00</th>  
+</tr>  
+<tr>
+<th style="font-weight: normal;">Italian Soda</th> 
+<th style="font-weight: normal;">$3.00</th> 
+</tr>
+</table>
+
+
+<form name="tblform" >
+<table width="80%"  id="alignment" >
+<tr>
+<th>Food Item</th>
+<th> </th>
+<th>Quantity</th>
+</tr>
+<tr> 
+<td>Entree One: </td> 
+<td>
+<select id="item1">
+<option value="1">--Select Item--</option> 
+<option value="Pizza Margarita">Pizza Margarita</option> 
+<option value="Caesar Salad">Caesar Salad</option> 
+<option value="Jumbo Pasta">Jumbo Pasta</option> 
+<option value="Pizza Talegio">Pizza Talegio</option> 
+<option value="Arugula Salad">Arugula Salad</option> 
+<option value="None">None</option> 
+</select>
+</td> 
+<td><input type="number" value="0" id="q1"></td>
+</tr>   
+<tr>
+<td>Entree Two:</td>
+<td>
+<select id="item2"> 
+<option value="1">--Select Item--</option> 
+<option value="Pizza Margarita">Pizza Margarita</option> 
+<option value="Caesar Salad">Caesar Salad</option> 
+<option value="Jumbo Pasta">Jumbo Pasta</option> 
+<option value="Pizza Talegio">Pizza Talegio</option> 
+<option value="Arugula Salad">Arugula Salad</option> 
+<option value="None">None </option> 
+</select>
+</td>
+<td><input  type="number" value="0" id="q2"></td>  
+</tr> 
+<tr>
+<td>Drinks:</td>
+<td><select id="item3">  
+<option value="1">--Select Item--</option> 
+<option value="Water">Water</option>  
+<option value="Coca-Cola">Coca-Cola</option> 
+<option value="Sparkling Water">Sparkling Water</option>
+<option value="Lemonade">Lemonade</option> 
+<option value="Italian Soda">Italian Soda</option> 
+<option value="None">None </option> 
+</select>
+</td>
+<td><input type="number" value="0" id="q3"></td>
+
+</tr> 
+<tr>
+<td>Drinks:</td>
+<td><select id="item4" name = "item4">   
+    <option value="1">--Select Item--</option> 
+    <option value="Water">Water</option>  
+    <option value="Coca-Cola">Coca-Cola</option> 
+    <option value="Sparkling Water">Sparkling Water</option>
+    <option value="Lemonade">Lemonade</option> 
+    <option value="Italian Soda">Italian Soda</option> 
+    <option value="None">None </option> 
+</select>
+</td>
+<td><input type="number" value="0" id="q4"></td>
+
+</tr>    
+<tr>
+<td></td> 
+<td></td> 
+<td><input type="submit" class="button" value="Create Bill" onclick=start()>
+</td>
+</tr>
+</table>
+</form>
+<script language = "javascript">
+    function start()
+    {
+        getOrder();
+        if(validateForm())
+        {
+            getNumOrder();
+            if(validateTotal())
+            {
+                askPayType(); 
+                reDirect();  
+            }
+        }
+    }
+    
+    
+    
+    
+    //Helper Functions 
+    
+    
+    //Gets order items from form
+    function getOrder()
+    {
+        entree = document.getElementById("item1").value;
+        entree2 = document.getElementById("item2").value;
+        drinks1 = document.getElementById("item3").value;
+        drinks2 = document.getElementById("item4").value;
+    }
+    //Validates if the items selected are valid 
+    function validateForm()
+    {
+        if(entree == "1" || entree2 == "1" || drinks1 == "1" || drinks2 == "1")
+        {
+            alert("You must input a selection for all item fields.");
+            return false;
+        }
+        else 
+        {
+            return true;
+        }
+    }
+    //Gets number of items ordered for each order 
+    function getNumOrder()
+    {
+        numOrders = [];
+        numOrders[0] = document.getElementById("q1").value;
+        numOrders[1] = document.getElementById("q2").value;
+        numOrders[2] = document.getElementById("q3").value;
+        numOrders[3] = document.getElementById("q4").value;
+        total = 0;
+        total += calcSide3() + calcSide2() + calcSide1() + calcEntree();
+    }
+    //Validates that the total isn't 0 and therefore isn't valid
+    function validateTotal()
+    {
+        if(total == 0)
+        {
+            alert("Your order must be more than $0.00. Please make different selections.");
+            return false;
+        }
+        else 
+        {
+            return true;
+        }
+    }
+    //Asks what method of payment the user wants to use
+    function askPayType()
+    {
+        let answer = prompt("Please enter Jumbo Cash or Meal Swipes to confirm your form of payment.", "Jumbo Cash/Meal Swipes");
+        if (answer == "Jumbo Cash")
+        {
+            total = Math.round(total * 100) / 100
+            total = total.toFixed(2)
+            alert("Your meal cost: $" + total);
+            reDirect();  
+            
+        }
+        else if(answer == "Meal Swipes")
+        {
+            //Show bill here through alert
+            checkMS();
+            reDirect();  
+        }
+        else 
+        {
+            alert("Not a valid option. Please order again!");
+            return false;
+        }
+    }
+    //Checks to see how many meal swipes the user must use and if they 
+    //need to use additional Jumbo Cash
+    function checkMS()
+    {
+        if(total > 28)
+        {
+            if(confirm("You are over the 2 meal swipes limit. Press confirm if you would like to pay for the rest of the bill with Jumbo Cash or cancel if you do not."))
+            {
+                total = Math.round(total * 100) / 100
+                total = total - 28;
+                total = total.toFixed(2)
+                alert("Your meal cost: 2 Meal Swipes and $" + total);
+                reDirect(); 
+            }
+        }
+        else if(total > 14 && total < 28)
+        {
+            if(confirm("Your meal requires 2 meal swipes. Press confirm to pay or cancel to cancel."))
+            {
+                total = Math.round(total * 100) / 100
+                total = total.toFixed(2)
+                alert("Your meal cost: 2 Meal Swipes/$" + total);
+                reDirect(); 
+            }
+        }
+        else if(total <= 14)
+        {
+            if(confirm("Your meal requires 1 meal swipe. Press confirm to pay or cancel to cancel."))
+            {
+                total = Math.round(total * 100) / 100
+                total = total.toFixed(2)
+                alert("Your meal cost: 1 Meal Swipe/$" + total);
+                reDirect(); 
+            }
+        }
+    } 
+    //Redirects the user to the Thank You For Ordering Page
+    function reDirect()
+    {
+        window.open("thankyouORDER.html");
+    }
+    
+    //The following functions calculate their respective subtotals 
+    //for their respective items 
+    function calcSide3()
+    {
+        var sumS3 = 0;
+        if(drinks2 == "Water")
+        {
+            sumS3 += 1.50 * numOrders[3];
+        }
+        else if(drinks2 == "Coca-Cola")
+        {
+            sumS3 += 2.50 * numOrders[3];
+        }
+        else if(drinks2 == "Sparkling Water")
+        {
+            sumS3 += 1.50 * numOrders[3];
+        }
+        else if(drinks2 == "Lemonade")
+        {
+            sumS3 += 2 * numOrders[3];
+        }
+        else if(drinks2 == "Italian Soda")
+        {
+            sumS3 += 3 * numOrders[3];
+        }
+        return sumS3;
+    }
+    function calcSide2()
+    {
+        var sumS2 = 0;
+        if(drinks1 == "Water")
+        {
+            sumS2 += 1.50 * numOrders[2];
+        }
+        else if(drinks1 == "Coca-Cola")
+        {
+            sumS2 += 2.50 * numOrders[2];
+        }
+        else if(drinks1 == "Sparkling Water")
+        {
+            sumS2 += 1.50 * numOrders[2];
+        }
+        else if(drinks1 == "Lemonade")
+        {
+            sumS2 += 2 * numOrders[2];
+        }
+        else if(drinks1 == "Italian Soda")
+        {
+            sumS2 += 3 * numOrders[2];
+        }
+        return sumS2;
+    }
+    function calcSide1()
+    {
+        var sumS1 = 0;
+        if(entree2 == "Pizza Margarita")
+        {
+                sumS1 += 18 * numOrders[1];
+        }
+        else if(entree2 == "Caesar Salad")
+        {
+                sumS1 += 10 * numOrders[1];
+        }
+        else if(entree2 == "Jumbo Pasta")
+        {
+                sumS1 += 18 * numOrders[1];
+        }
+        else if(entree2 == "Pizza Talegio")
+        {
+                sumS1 += 18 * numOrders[1];
+        }
+        else if(entree2 == "Argula Salad")
+        {
+                sumS1 += 8 * numOrders[1];
+        }
+        else if(entree2 == "Pan Seared Salmon")
+        {
+                sumS1 += 25 * numOrders[1];
+        }
+        return sumS1;
+    }
+    function calcEntree()
+    {
+        var sumE = 0;
+        if(entree == "Pizza Margarita")
+        {
+                sumE += 18 * numOrders[0];
+        }
+        else if(entree == "Caesar Salad")
+        {
+                sumE += 10 * numOrders[0];
+        }
+        else if(entree == "Jumbo Pasta")
+        {
+                sumE += 18 * numOrders[0];
+        }
+        else if(entree == "Pizza Talegio")
+        {
+                sumE += 18 * numOrders[0];
+        }
+        else if(entree == "Argula Salad")
+        {
+                sumE += 8 * numOrders[0];
+        }
+        else if(entree == "Pan Seared Salmon")
+        {
+                sumE += 25 * numOrders[0];
+        }
+        return sumE;
+    }
+</script>
+<footer>Opening Hours: Mon - Fri: 11am -10pm  Sat - Sun: 1pm - 12pm</footer>
+</body>
+</html>
