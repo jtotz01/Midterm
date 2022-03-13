@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Prompt:wght@100&display=swap" rel="stylesheet">
-<title>Jumbo Italiano</title>
+<title>Jumbo Italia</title>
 	
 	<style>
 		#title_image {
@@ -44,7 +44,7 @@
 		}
 	
 	</style>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -62,17 +62,27 @@
   		<a class="dropLink" href="reviews.html">Reviews</a>
 	</div>
 	</nav> 
-	<script>
+	<script language="javascript">
 		document.querySelector('#dropdown').addEventListener('click', () => 
 			{
 				document.querySelector('#dropdown-content').classList.add('activate');
 			})
 	
 	</script>
+	<script>
+		$(document).ready(function(){
+			
+		$('#title_image').css('display', 'none');
+		$('#title_image').fadeIn(1000);
+		$('#coverText').css('display', 'none');
+		$('#coverText').fadeIn(1000);
+
+});
+	</script>
 </header>
 <div id="cover">
 	<img src="cummings(2).jpg" alt="Cummings Center" id="title_image">
-	<div id="coverText"><p>Jumbo Italia!</p></div>
+	<div id="coverText"><h2><p>Jumbo Italia!</p></h2></div>
 </div>
 	<h1>Welcome to Tuft's Newest and Most Delicious Italian Resturaunt!</h1>
 	<div id="container">
