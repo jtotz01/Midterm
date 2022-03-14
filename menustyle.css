@@ -29,6 +29,7 @@ body{
   display:inline-block;
   padding-bottom:10px;
   margin-top: 60px;
+  font-weight: normal;
 }
 .Menutitle h4 span{
   display:block;
@@ -59,6 +60,7 @@ body{
   position:relative;
   display:inline-block;
   padding-bottom:10px;
+  font-weight: normal;
 }
 .DrinkMenutitle h4 span{
   display:block;
