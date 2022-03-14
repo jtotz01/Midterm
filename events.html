@@ -1,16 +1,11 @@
 <html>
-
 <head>
-
     <meta name=‘viewport’ content=“width=device-width, initial-scale=1”>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
-
-    <title>Events</title>
-
+    <title>Events - Jumbo Italia</title>
     <style type="text/css">
-
         header {
             float: left;
             background-color: #3e8ede;
@@ -23,7 +18,6 @@
             z-index: 100;
             margin-top:-10px;
         }
-
         #logo {
             float: left;
             margin-left: 10%;
@@ -32,14 +26,11 @@
             z-index: 100;
             margin-bottom: -10px;
         }
-
         nav {
             float:right;
             height: 100%;
             margin-right: 7%;
         }
-
-
         .page, button {
             padding: 30px;
             padding-top: 22%;
@@ -51,6 +42,107 @@
             color:white;
             text-decoration: none;
         }
+
+        .EventsTitle{
+          text-align:center;
+          margin-bottom:15px;
+
+        }
+        .EventsTitle h1{
+          text-transform:capitalize;
+          font-size:36px;
+          position:relative;
+          display:inline-block;
+          padding-bottom:10px;
+          margin-top: 30px;
+        }
+
+        .EventsTitle h1:before{
+          position:absolute;
+          content:"";
+          width:150px;
+          height:2px;
+          background-color:#35b1ff;
+          bottom:0;
+          left:50%;
+          transform:translateX(-50%);
+        }
+
+        .StudentEventsTitle{
+          text-align:center;
+          margin-bottom:15px;
+
+        }
+        .StudentEventsTitle h2{
+          text-transform:capitalize;
+          font-size:36px;
+          position:relative;
+          display:inline-block;
+          padding-bottom:10px;
+          margin-top: 30px;
+        }
+
+        .StudentEventsTitle h2:before{
+          position:absolute;
+          content:"";
+          width:150px;
+          height:2px;
+          background-color:#35b1ff;
+          bottom:0;
+          left:50%;
+          transform:translateX(-50%);
+        }
+
+        .LiveTitle{
+          text-align:center;
+          margin-bottom:15px;
+
+        }
+        .LiveTitle h2{
+          text-transform:capitalize;
+          font-size:36px;
+          position:relative;
+          display:inline-block;
+          padding-bottom:10px;
+          margin-top: 30px;
+        }
+
+        .LiveTitle h2:before{
+          position:absolute;
+          content:"";
+          width:150px;
+          height:2px;
+          background-color:#35b1ff;
+          bottom:0;
+          left:50%;
+          transform:translateX(-50%);
+        }
+
+        .PrivateTitle{
+          text-align:center;
+          margin-bottom:15px;
+
+        }
+        .PrivateTitle h2{
+          text-transform:capitalize;
+          font-size:36px;
+          position:relative;
+          display:inline-block;
+          padding-bottom:10px;
+          margin-top: 30px;
+        }
+
+        .PrivateTitle h2:before{
+          position:absolute;
+          content:"";
+          width:150px;
+          height:2px;
+          background-color:#35b1ff;
+          bottom:0;
+          left:50%;
+          transform:translateX(-50%);
+        }
+
 
         .dropdown-content {
             display: none;
@@ -66,7 +158,6 @@
             transition-delay: 3s;
             box-shadow: 0 20px 10px gray;
         }
-
         .dropLink {
             float:none;
             display:block;
@@ -76,21 +167,16 @@
             text-decoration: none;
             
         }
-
         #dropdown:hover~.dropdown-content {
             display:block;
         }
-
         .activate {
             display:block;
         }
-
         .dropdown-content:hover {
             display:block;
             transition-delay: 3s;
-
         }
-
         footer {
             text-align: center;
             background-color: #3e8ede;
@@ -99,14 +185,12 @@
             font-size: 20px;
             
         }
-
         @media (max-width: 1509px){
             .dropdown-content {
                 right: 6%;
                 width: 150px;
             }
         }
-
         @media (max-width: 747px){
             #logo {
                 width:30%;
@@ -117,7 +201,6 @@
                 padding-top: 30%;
             }
         }
-
         @media (max-width: 510px){
             .page, button {
                 padding: 0px;
@@ -125,13 +208,11 @@
                 font-size: 20px;
             }
         }
-
         @media (max-width: 1099px){
             #coverText {
                     top: 9%;
                 }
         }
-
         h1 {
             font-family: 'Poppins', sans-serif;
             font-size: 60px;
@@ -146,7 +227,7 @@
         }
         .text {
             font-family: 'Poppins', sans-serif;
-            font-size: 21px;
+            font-size: 25px;
         }
         .center {
             text-align: center;
@@ -155,15 +236,9 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
-
-
     </style>
-
 </head>
-
-
 <body>
-
     <header>
         <a href="index.html"><img src="jumbo italia logo.png" id="logo"/></a>
         <nav>
@@ -187,10 +262,15 @@
         </script>
     </header>
 
-    <h1>Events</h1>
+    <div class="EventsTitle">
+        <h1>Events</h1>
+    </div>
     <table>
         <tr>
-            <td><h2>Student Events</h2>
+            <td>
+                <div class="StudentEventsTitle">
+                    <h2>Student Events</h2>
+                </div>
                 <div class="text">Student music groups from Tufts are often featured on Sundays. These consist of groups 
                     such as Tufts Symphony Orchestra and Wind Ensemble, as well as select jazz and vocals groups.</div>
             </td>
@@ -199,14 +279,18 @@
 
         <tr>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="liveperformance.jpg"/></td>
-            <td></br><h2 class="heading">Live Performances</h2>
+            <td></br>
+                <!-- <h2 class="heading">Live Performances</h2> -->
+                <div class="LiveTitle">
+                    <h2>Live Performances</h2>
+                </div>
                 <p class="text">Every Friday, we feature live performances from Tufts student-run music groups as well as artists and bands 
                 from the local boston area.</p>
                 <div class="text">Featured this Friday: Medford Symphony Orchestra.
-                The Medford Symphony Orchestra is an orchestra based in Medford and specialize in classical music by 
+                The Medford Symphony Orchestra is Medford-based and specializes in classical music by 
                 artists such as Beethoven, Debussy, and Mahler. They have had several previous performances at venues such 
                 as Carnegie Hall in New york and Symphony Hall in Boston.</div>
-                <p class="text"> Schedule for the next month: </p>
+                <p class="text">Schedule for the next month: </p>
                 <table class="schedule"> 
                     <tr>
                         <th class="schedule"><div class="text">Date</div></th>
@@ -230,7 +314,10 @@
         </tr>
 
         <tr>
-            <td><h2>Private Events</h2>
+            <td>
+                <div class="PrivateTitle">
+                    <h2>Private Events</h2>
+                </div>
                 <p class="text">Private events, such as parties, receptions, etc., can be held upon request and should be scheduled 
                 at least a week before the event date.</p>
                 <h3>Host your private event:</h3>
@@ -241,14 +328,9 @@
             <td class="center"></br></br><img src="privateevent.jpg"/></br></br></br></td>
         </tr>
  
-
-
     </table>
-
     <footer>Opening Hours: Mon - Fri: 11am -10pm  Sat - Sun: 1pm - 12pm</footer>
-
 </body>
-
 
 
 </html>
