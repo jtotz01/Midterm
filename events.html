@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
 
-    <title>Events - Jumbo Italia</title>
+    <title>Events</title>
 
     <style type="text/css">
 
@@ -51,107 +51,6 @@
             color:white;
             text-decoration: none;
         }
-        
-        .EventsTitle{
-          text-align:center;
-          margin-bottom:15px;
-          
-        }
-        .EventsTitle h1{
-          text-transform:capitalize;
-          font-size:36px;
-          position:relative;
-          display:inline-block;
-          padding-bottom:10px;
-          margin-top: 30px;
-        }
-
-        .EventsTitle h1:before{
-          position:absolute;
-          content:"";
-          width:150px;
-          height:2px;
-          background-color:#35b1ff;
-          bottom:0;
-          left:50%;
-          transform:translateX(-50%);
-        }
-
-        .StudentEventsTitle{
-          text-align:center;
-          margin-bottom:15px;
-          
-        }
-        .StudentEventsTitle h2{
-          text-transform:capitalize;
-          font-size:36px;
-          position:relative;
-          display:inline-block;
-          padding-bottom:10px;
-          margin-top: 30px;
-        }
-
-        .StudentEventsTitle h2:before{
-          position:absolute;
-          content:"";
-          width:150px;
-          height:2px;
-          background-color:#35b1ff;
-          bottom:0;
-          left:50%;
-          transform:translateX(-50%);
-        }
-        
-        .LiveTitle{
-          text-align:center;
-          margin-bottom:15px;
-          
-        }
-        .LiveTitle h2{
-          text-transform:capitalize;
-          font-size:36px;
-          position:relative;
-          display:inline-block;
-          padding-bottom:10px;
-          margin-top: 30px;
-        }
-
-        .LiveTitle h2:before{
-          position:absolute;
-          content:"";
-          width:150px;
-          height:2px;
-          background-color:#35b1ff;
-          bottom:0;
-          left:50%;
-          transform:translateX(-50%);
-        }
-        
-        .PrivateTitle{
-          text-align:center;
-          margin-bottom:15px;
-          
-        }
-        .PrivateTitle h2{
-          text-transform:capitalize;
-          font-size:36px;
-          position:relative;
-          display:inline-block;
-          padding-bottom:10px;
-          margin-top: 30px;
-        }
-
-        .PrivateTitle h2:before{
-          position:absolute;
-          content:"";
-          width:150px;
-          height:2px;
-          background-color:#35b1ff;
-          bottom:0;
-          left:50%;
-          transform:translateX(-50%);
-        }
-        
 
         .dropdown-content {
             display: none;
@@ -234,17 +133,20 @@
         }
 
         h1 {
+            font-family: 'Poppins', sans-serif;
             font-size: 60px;
         }
         h2 {
+            font-family: 'Poppins', sans-serif;
             font-size: 45px;
         }
         h3 {
-            font-size: 25px;
-        }
-        body, p, div {
             font-family: 'Poppins', sans-serif;
             font-size: 25px;
+        }
+        .text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 21px;
         }
         .center {
             text-align: center;
@@ -285,16 +187,11 @@
         </script>
     </header>
 
-    <div class="EventsTitle">
-        <h1>Events</h1>
-    </div>
+    <h1>Events</h1>
     <table>
         <tr>
-            <td>
-                <div class="StudentEventsTitle">
-                    <h2>Student Events</h2>
-                </div>
-                <div>Student music groups from Tufts are often featured on Sundays. These consist of groups 
+            <td><h2>Student Events</h2>
+                <div class="text">Student music groups from Tufts are often featured on Sundays. These consist of groups 
                     such as Tufts Symphony Orchestra and Wind Ensemble, as well as select jazz and vocals groups.</div>
             </td>
             <td class="center"></br></br><img src="studentevent.jpg"/></br></br></br></td>
@@ -302,34 +199,30 @@
 
         <tr>
             <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="liveperformance.jpg"/></td>
-            <td></br>
-                <!-- <h2 class="heading">Live Performances</h2> -->
-                <div class="LiveTitle">
-                    <h2>Live Performances</h2>
-                </div>
-                <p>Every Friday, we feature live performances from Tufts student-run music groups as well as artists and bands 
+            <td></br><h2 class="heading">Live Performances</h2>
+                <p class="text">Every Friday, we feature live performances from Tufts student-run music groups as well as artists and bands 
                 from the local boston area.</p>
-                <div>Featured this Friday: Medford Symphony Orchestra.
-                The Medford Symphony Orchestra is Medford-based and specializes in classical music by 
+                <div class="text">Featured this Friday: Medford Symphony Orchestra.
+                The Medford Symphony Orchestra is an orchestra based in Medford and specialize in classical music by 
                 artists such as Beethoven, Debussy, and Mahler. They have had several previous performances at venues such 
                 as Carnegie Hall in New york and Symphony Hall in Boston.</div>
-                <p> Schedule for the next month: </p>
+                <p class="text"> Schedule for the next month: </p>
                 <table class="schedule"> 
                     <tr>
-                        <th class="schedule"><div>Date</div></th>
-                        <th class="schedule"><div>Performance</div></th>
+                        <th class="schedule"><div class="text">Date</div></th>
+                        <th class="schedule"><div class="text">Performance</div></th>
                     </tr>
                     <tr>
-                        <td class="schedule"> <div>&nbsp March 18 &nbsp</div></td>
-                        <td class="schedule"> <div>&nbsp Medford Symphony Orchestra &nbsp</div></td>
+                        <td class="schedule"> <div class="text">&nbsp March 18 &nbsp</div></td>
+                        <td class="schedule"> <div class="text">&nbsp Medford Symphony Orchestra &nbsp</div></td>
                     </tr>
                     <tr>
-                        <td class="schedule"> <div>&nbsp March 25 &nbsp</div></td>
-                        <td class="schedule"> <div>&nbsp Tufts Jazz Ensemble &nbsp</div></td>
+                        <td class="schedule"> <div class="text">&nbsp March 25 &nbsp</div></td>
+                        <td class="schedule"> <div class="text">&nbsp Tufts Jazz Ensemble &nbsp</div></td>
                     </tr>
                     <tr>
-                        <td class="schedule"> <div>&nbsp April 1 &nbsp</div></td>
-                        <td class="schedule"> <div>&nbsp Tufts Symphony Orchestra &nbsp</div></td>
+                        <td class="schedule"> <div class="text">&nbsp April 1 &nbsp</div></td>
+                        <td class="schedule"> <div class="text">&nbsp Tufts Symphony Orchestra &nbsp</div></td>
                     </tr>
                 </table>
                 </br></br></br>
@@ -337,14 +230,11 @@
         </tr>
 
         <tr>
-            <td>
-                <div class="PrivateTitle">
-                    <h2>Private Events</h2>
-                </div>
-                <p>Private events, such as parties, receptions, etc., can be held upon request and should be scheduled 
+            <td><h2>Private Events</h2>
+                <p class="text">Private events, such as parties, receptions, etc., can be held upon request and should be scheduled 
                 at least a week before the event date.</p>
                 <h3>Host your private event:</h3>
-                <div>To host your own private event,
+                <div class="text">To host your own private event,
                 <a class="hplink", href="contact.html">contact us</a>
                 and include your name, jumbo id, and the event you would like to hold.</div>
             </td>
@@ -362,4 +252,3 @@
 
 
 </html>
-©
